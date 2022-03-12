@@ -1,0 +1,67 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;	
+}
+.grid-5-by-5 {
+  /* Activate grid layout */
+  display: grid;
+
+  /* Create 5 columns, each 1 "fractional unit" wide */
+  grid-template-columns: repeat(5, 1fr);
+
+  /* Create 5 rows, each 1 "fractional unit" high */
+  grid-template-rows: repeat(5, 1fr);
+
+  /* Add a 10px gap between columns and rows */
+  grid-gap: 10px;
+
+  margin: 0.25em;
+}
+
+.item {
+  background-color: rgba(0, 0, 0, 1);
+  border: 0.2rem solid green;
+  padding: 0.25em;
+  margin: 0.5rem;
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+}
+.title {
+  color: red;
+  align-self: flex-start;
+  justify-self: start;
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.3rem;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  flex-shrink: 0;
+}
+.slider {
+  width: 100%;
+}
+.btn {
+  size: 100%;
+  align-self: flex-end;
+  flex-basis: 100%;
+  padding: 1rem;
+  border:0.2rem solid green;
+  background: black;
+  color:red;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  flex-wrap: wrap;
+  margin: 0 100%;
+}
+.btn:active {
+  background-color: lightgrey;
+}
